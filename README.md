@@ -4,6 +4,12 @@
 ## Dependencies
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3. and NodeJS v24.9.0.
 
+## Developper Environement setup
+
+* Clone this git repository
+* CD to the local directory ```cd recipe-book```
+* Run ```npm install```
+
 ## Development server
 
 To start a local development server, run:

@@ -1,6 +1,8 @@
 # RecipeBook
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+
+## Dependencies
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3. and NodeJS v24.9.0.
 
 ## Development server
 
@@ -53,6 +55,11 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Linting
+
+Before making a PR, ensure that you verify thant is properly linted. To do so, before commiting, use the command ```ng lint --fix```. If you ommit this step and you code is not linted, the pipeline will fail and you PR will not be able to get merged.
+
 
 ## Additional Resources
 

@@ -1,6 +1,14 @@
 # RecipeBook
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+
+## Dependencies
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3. and NodeJS v24.9.0.
+
+## Developper Environement setup
+
+* Clone this git repository
+* CD to the local directory ```cd recipe-book```
+* Run ```npm install```
 
 ## Development server
 
@@ -53,6 +61,11 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Husky / ESLint / Prettier
+
+Please run ```npm run format``` before commit to git. This will bulk format your code.</br>
+This beeing said, Husky has been installed when you ran the ```npm install``` and will ensure the Linter and Prettier are ran with ```--fix``` before committing.
 
 ## Additional Resources
 

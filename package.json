@@ -8,7 +8,14 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:recipe-book": "node dist/recipe-book/server/server.mjs",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prepare": "husky install && chmod +x .husky/*"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html,css,scss}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "prettier": {
     "printWidth": 100,
@@ -51,12 +58,14 @@
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^16.2.1",
     "prettier": "^3.6.2",
     "typescript": "~5.9.2",
     "typescript-eslint": "8.40.0"

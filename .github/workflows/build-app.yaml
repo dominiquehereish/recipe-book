@@ -29,6 +29,6 @@ jobs:
 
       - name: Lint
         run: npm run lint
-        
+
       - name: Build Angular App
         run: npm run build

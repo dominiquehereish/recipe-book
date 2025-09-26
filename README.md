@@ -64,7 +64,8 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ## Husky / ESLint / Prettier
 
-Husky will be installed when you run the ```npm install``` and will ensure the Linter and Prettier are ran with ```--fix``` before committing.
+Please run ```npm run format``` before commit to git. This will bulk format your code.</br>
+This beeing said, Husky has been installed when you ran the ```npm install``` and will ensure the Linter and Prettier are ran with ```--fix``` before committing.
 
 ## Additional Resources
 

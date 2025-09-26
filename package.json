@@ -9,24 +9,13 @@
     "test": "ng test",
     "serve:ssr:recipe-book": "node dist/recipe-book/server/server.mjs",
     "lint": "ng lint",
-    "prepare": "husky install && chmod +x .husky/*"
+    "prepare": "husky install && chmod +x .husky/*",
+    "format": "prettier --write \"src/**/*.{ts,html,css,scss}\""
   },
   "lint-staged": {
     "src/**/*.{ts,html,css,scss}": [
       "eslint --fix",
       "prettier --write"
-    ]
-  },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
     ]
   },
   "private": true,

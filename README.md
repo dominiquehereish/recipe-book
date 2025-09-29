@@ -2,7 +2,13 @@
 
 
 ## Dependencies
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3. and NodeJS v24.9.0.
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3. and NodeJS v24.9.0.</br>
+It also uses:
+
+* ngx-translate
+* ESLint
+* Husky
 
 ## Developper Environement setup
 

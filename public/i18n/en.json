@@ -1,0 +1,14 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "LANGUAGE": "Language"
+  },
+  "HOME": {
+    "TITLE": "Home works!"
+  },
+  "ABOUT": {
+    "TITLE": "About works!",
+    "DESCRIPTION": "This is the about page."
+  }
+}

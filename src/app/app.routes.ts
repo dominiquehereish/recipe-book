@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { Home } from './core/home/home';
+// import { authGuard } from './core/guards/auth.guard'; // ✅
 
 export const routes: Routes = [
   {
@@ -9,5 +10,9 @@ export const routes: Routes = [
   {
     path: 'about',
     loadComponent: () => import('./features/about/about').then((m) => m.About),
+  },
+  {
+    path: '**',
+    redirectTo: '',
   },
 ];

@@ -2,6 +2,8 @@
   "NAV": {
     "HOME": "Home",
     "ABOUT": "About",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
     "LANGUAGE": "Language"
   },
   "HOME": {

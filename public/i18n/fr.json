@@ -2,6 +2,7 @@
   "NAV": {
     "HOME": "Accueil",
     "ABOUT": "À propos",
+    "ADMIN": "PanneauAdmin",
     "LOGIN": "Connexion",
     "LOGOUT": "Déconnexion",
     "LANGUAGE": "Langue"
@@ -12,5 +13,9 @@
   "ABOUT": {
     "TITLE": "La page à propos fonctionne !",
     "DESCRIPTION": "Ceci est la page à propos."
+  },
+  "ADMIN": {
+    "TITLE": "Panneau Admin",
+    "DESCRIPTION": "Visible uniquement par les utilisateurs ayant le rôle <strong>ADMIN</strong>."
   }
 }

@@ -1,6 +1,5 @@
-import { Injectable, signal, inject } from '@angular/core';
+import { Injectable, signal, inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { PLATFORM_ID } from '@angular/core';
 import Keycloak from 'keycloak-js';
 import { BehaviorSubject, catchError, from, interval, map, of, switchMap, tap } from 'rxjs';
 

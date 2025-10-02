@@ -8,17 +8,16 @@ import { BehaviorSubject, catchError, from, interval, map, of, switchMap, tap } 
 export class AuthService {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
+  readonly isAuthenticated = signal(false);
+  readonly username = signal<string | null>(null);
+  readonly roles = signal<string[]>([]);
+  private initialized$ = new BehaviorSubject<boolean>(false);
 
   private readonly keycloak = new Keycloak({
     url: 'http://localhost:8080',
     realm: 'foodfinder',
     clientId: 'foodfinder-client',
   });
-
-  readonly isAuthenticated = signal(false);
-  readonly username = signal<string | null>(null);
-
-  private initialized$ = new BehaviorSubject<boolean>(false);
 
   constructor() {
     if (this.isBrowser) {
@@ -41,6 +40,10 @@ export class AuthService {
         this.username.set(
           authenticated ? (this.keycloak.tokenParsed?.['preferred_username'] ?? null) : null,
         );
+        const roleList = authenticated
+          ? (this.keycloak.tokenParsed?.realm_access?.roles ?? [])
+          : [];
+        this.roles.set(roleList);
         this.initialized$.next(true);
       }),
       catchError((err) => {
@@ -61,6 +64,10 @@ export class AuthService {
     if (this.isBrowser) {
       this.keycloak.logout({ redirectUri: window.location.origin });
     }
+  }
+
+  hasRole(role: string): boolean {
+    return this.roles().includes(role);
   }
 
   token$() {

@@ -21,24 +21,22 @@ It also uses:
 
 * Pre-requisite: Docker
 
-run a containerised keycloack on you local machine in dev-mode with docker:
-
-```
-docker run --name keycloak \
-  -p 8080:8080 \
-  -e KEYCLOAK_ADMIN=admin \
-  -e KEYCLOAK_ADMIN_PASSWORD=admin \
-  quay.io/keycloak/keycloak:24.0.3 \
-  start-dev
-```
-
-*access the Keycloack UI : http://localhost:8080*
-</br></br>
-a docker compose file is also available at the root of this directory and can be ran with:
+run a containerised keycloack on you local machine in dev-mode with docker-compose with:
 
 ```
 docker-compose up
 ```
+
+*access the Keycloack UI : http://localhost:8080*
+</br></br>
+
+## Testing keycloak and Roles
+
+Your realm will be loaded whenyou run the container. multiple test users will be created:
+
+* admin:admin - Role: admin
+* chef:chef   - Role: chef
+* cook:cook   - Role: cook
 
 ## Development server
 

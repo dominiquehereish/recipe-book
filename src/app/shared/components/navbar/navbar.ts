@@ -37,4 +37,8 @@ export class Navbar {
   logout() {
     this.authService.logout();
   }
+
+  hasRole(role: string): boolean {
+    return this.authService.hasRole(role);
+  }
 }

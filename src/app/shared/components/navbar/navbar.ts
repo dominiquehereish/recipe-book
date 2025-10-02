@@ -26,7 +26,6 @@ export class Navbar {
     if (selectElement) {
       const lang = selectElement.value;
       this.langService.use(lang);
-      this.currentLang = lang;
     }
   }
 

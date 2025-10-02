@@ -2,6 +2,7 @@
   "NAV": {
     "HOME": "Home",
     "ABOUT": "About",
+    "ADMIN": "AdminPanel",
     "LOGIN": "Login",
     "LOGOUT": "Logout",
     "LANGUAGE": "Language"
@@ -12,5 +13,9 @@
   "ABOUT": {
     "TITLE": "About works!",
     "DESCRIPTION": "This is the about page."
+  },
+  "ADMIN": {
+    "TITLE": "Admin Panel",
+    "DESCRIPTION": "Only visible to users with the <strong>ADMIN</strong> role."
   }
 }

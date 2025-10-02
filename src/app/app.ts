@@ -18,9 +18,6 @@ export class App {
   private translate = inject(TranslateService);
 
   constructor() {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setFallbackLang('en');
-    this.translate.use('en');
     effect(() => {
       this.auth.init$().subscribe();
     });

@@ -22,7 +22,7 @@
           <a class="nav-link" routerLink="/about">{{ 'NAV.ABOUT' | translate }}</a>
         </li>
         <li class="nav-item" *ngIf="isAuthenticated() && hasRole('admin')">
-          <a class="nav-link" routerLink="/admin">AdminPanel</a>
+          <a class="nav-link" routerLink="/admin">{{ 'NAV.ADMIN' | translate }}</a>
         </li>
       </ul>
 
@@ -32,7 +32,7 @@
           id="langSelect"
           class="form-select form-select-sm bg-dark text-white me-2"
           (change)="changeLang($event)"
-          [value]="currentLang"
+          [value]="currentLang()"
         >
           <option *ngFor="let lang of availableLangs" [value]="lang">
             {{ lang.toUpperCase() }}

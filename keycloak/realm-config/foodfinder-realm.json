@@ -14,6 +14,32 @@
         }
       ],
       "realmRoles": ["admin"]
+    },
+    {
+      "username": "cook",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "cook",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["cook"]
+    },
+    {
+      "username": "chef",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "chef",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["chef"]
     }
   ],
   "clients": [
